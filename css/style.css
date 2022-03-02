@@ -22,6 +22,11 @@ a{
 ul{
     list-style: none;
 }
+/***** test *****/
+body{
+    background-color: tomato;
+}
+/***** End test *****/
 /***** general *****/
 .container {
     width: 90%;
@@ -66,7 +71,7 @@ ul{
 /***** End general *****/
 /***** navbar *****/
 .navbar{
-    padding: 0.8125rem 0;
+    padding: 1.125rem 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -76,13 +81,18 @@ ul{
 }
 .navHeader{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .navToggle{
     color: var(--white-text);
     background: rgba(0, 0, 0, 0);
     border: none;
     font-size: 1.5625rem;
+}
+.logo{
+    color: var(--logo-pink);
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 .navLink a{
     color: var(--white-text);
