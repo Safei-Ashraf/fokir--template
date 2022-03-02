@@ -101,8 +101,18 @@ body{
 }
 .navLinks{
     display: none;
+    background: var(--dark-title);
+    color: var(--white-text);
+    text-align: center;
+    width: 100%;
 }
-@media only screen and (min-width:1024px) {
+.navLink:first-child a{
+    color: var(--logo-pink);
+}
+.navLink{
+    padding: 0.75rem 0;
+}
+@media only screen and (min-width:678px) {
     .navbar .container{
         display: flex;
         align-items: center;
@@ -111,13 +121,12 @@ body{
     .navLinks{
         display: block;
         display: flex;
+        justify-content: flex-end;
+        background: transparent;
     }
     .navLink{
         padding: 1.25rem 0.625rem;
         font-weight: 300;
-    }
-    .navLink:first-child a{
-        color: var(--logo-pink);
     }
     .navLogo{
         display: block;
@@ -125,9 +134,6 @@ body{
     }
     .navToggle{
         display: none;
-    }
-    .navbar .flexContainer {
-        justify-content: space-between;
     }
     .navbar{
         padding: 0;
