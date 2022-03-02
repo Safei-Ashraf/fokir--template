@@ -24,7 +24,7 @@ ul{
 }
 /***** test *****/
 body{
-    background-color: tomato;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 /***** End test *****/
 /***** general *****/
@@ -75,6 +75,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 .navbar .flexContainer{
     justify-content: flex-end;
@@ -92,7 +93,6 @@ body{
 .logo{
     color: var(--logo-pink);
     font-size: 1.5rem;
-    font-weight: 800;
 }
 .navLink a{
     color: var(--white-text);
@@ -101,5 +101,36 @@ body{
 .navLinks{
     display: none;
 }
-@media only screen and (min-width:1024px) {}
+@media only screen and (min-width:1024px) {
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navLinks{
+        display: block;
+        display: flex;
+    }
+    .navLink{
+        padding: 1.25rem 0.625rem;
+        font-weight: 300;
+    }
+    .navLink:first-child a{
+        color: var(--logo-pink);
+    }
+    .navLogo{
+        display: block;
+        width: 9.375rem;
+    }
+    .navToggle{
+        display: none;
+    }
+    .navbar .flexContainer {
+        justify-content: space-between;
+    }
+    .navbar{
+        padding: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+}
 /***** End navbar *****/
