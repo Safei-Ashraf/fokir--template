@@ -64,3 +64,32 @@ ul{
     text-transform: capitalize;
 }
 /***** End general *****/
+/***** navbar *****/
+.navbar{
+    padding: 0.8125rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar .flexContainer{
+    justify-content: flex-end;
+}
+.navHeader{
+    display: flex;
+    justify-content: flex-start;
+}
+.navToggle{
+    color: var(--white-text);
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 1.5625rem;
+}
+.navLink a{
+    color: var(--white-text);
+    text-transform: capitalize;
+}
+.navLinks{
+    display: none;
+}
+@media only screen and (min-width:1024px) {}
+/***** End navbar *****/
