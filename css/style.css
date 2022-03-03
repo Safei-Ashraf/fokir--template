@@ -22,6 +22,9 @@ a{
 ul{
     list-style: none;
 }
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 /***** general *****/
 .container {
     width: 90%;
@@ -39,10 +42,12 @@ ul{
 .btn{
     background: var(--logo-pink) none repeat scroll 0 0;
     border-radius: 4px;
+    border: none;
+    text-transform: capitalize;
     color: var(--light-bg);
     display: inline-block;
     margin-right: 0.625rem;
-    padding: 0.625rem 1.5rem;
+    padding: 0.625rem 1.5rem 0.5rem 0.625rem;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -64,3 +69,82 @@ ul{
     text-transform: capitalize;
 }
 /***** End general *****/
+/***** hello *****/
+.hello.paddingY{
+    padding: 3.75rem 0;
+}
+.hello img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.hello figure{
+    position: relative;
+}
+.helloOverlay{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(0px) translateX(0px);
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.57);
+    transition: all 0.5s ease 0s;
+}
+.socialIcons{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.socialIcons li{
+    color: var(--white-text);
+    padding: 0 10px;
+}
+.helloOverlay:hover{
+    opacity: 1;
+}
+.hello .btn{
+    padding: 0.5rem 0.625rem;
+}
+.helloTitle{
+    font-size: 2.125rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    margin-bottom: 1.5625rem;
+    margin-top: 1.875rem;
+    text-transform: uppercase;
+    color: var(--dark-title);
+}
+.helloTitle span{
+    color: var(--logo-pink);
+    margin-right: 0.3125rem;
+}
+.helloDesc{
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 1.5625rem;
+    padding-bottom: 1.5625rem;
+    color: var(--dark-text);
+}
+.helloInfo li{
+    color: #555555;
+    line-height: 1;
+    margin-bottom: 1.5625rem;
+    white-space:nowrap;
+}
+.helloInfo li span{
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+/***** End hello *****/
