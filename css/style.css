@@ -73,7 +73,11 @@ body{
 .hello.paddingY{
     padding: 3.75rem 0;
 }
+.hello .flex-container{
+    justify-content: center;
+}
 .hello img{
+    margin: 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -147,15 +151,56 @@ body{
     padding-bottom: 1.5625rem;
     color: var(--dark-text);
 }
-.helloInfo li{
+.helloList{
+    display: flex;
+    flex-direction: column;
+}
+.helloList li{
     color: #555555;
     line-height: 1;
     margin-bottom: 1.5625rem;
     white-space:nowrap;
 }
-.helloInfo li span{
+.helloList li span{
     color: #000000;
     font-weight: 500;
     text-transform: capitalize;
+}
+@media only screen and (min-width:768px) {
+    .hello figure{
+        width: 50%;
+    }
+    .helloInfo{
+        width: 50%;
+        padding: 0 0 0 5.375rem;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .helloInfo{
+        width: 50%;
+        padding: 0 0 0 4.375rem;
+    }
+    .hello figure{
+        width: 31%;
+    }
+    .hello img{
+        margin: 28px  0 -47px 28px;
+    }
+    .hello figure{
+        border: 8px solid var(--dark-text);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .helloList{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .helloList li{
+        width: 40%;
+    }
 }
 /***** End hello *****/
