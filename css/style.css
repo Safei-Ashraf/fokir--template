@@ -91,10 +91,21 @@ body{
     border-radius: 5px;
     height: 100%;
     opacity: 0;
-    transform: translateY(0px) translateX(0px);
-    visibility: visible;
     background: rgba(0, 0, 0, 0.57);
-    transition: all 0.5s ease 0s;
+    transform: translateY(0px) translateX(0px);
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transform: translateY(0px) translateX(0px);
+    -moz-transform: translateY(0px) translateX(0px);
+    -ms-transform: translateY(0px) translateX(0px);
+    -o-transform: translateY(0px) translateX(0px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .socialIcons{
     display: flex;
