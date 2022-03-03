@@ -3,9 +3,9 @@ let navLinks = document.getElementsByClassName("navLinks")[0]
 
 navToggle.addEventListener("click", menuDown);
 function menuDown(){
-    if(navLinks.style.display === "none"){
-        navLinks.style.display="block"
-    }else{
+    if(navLinks.style.display === "flex"){
         navLinks.style.display="none"
+    }else{
+        navLinks.style.display="flex"
     }
 }

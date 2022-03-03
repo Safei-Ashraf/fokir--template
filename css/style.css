@@ -102,6 +102,7 @@ body{
 }
 .navLinks{
     display: none;
+    flex-direction: column;
     background: var(--dark-title);
     color: var(--white-text);
     text-align: center;
@@ -120,8 +121,8 @@ body{
         justify-content: space-between;
     }
     .navLinks{
-        display: block;
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
         background: transparent;
     }
