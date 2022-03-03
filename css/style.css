@@ -68,6 +68,28 @@ body{
     margin-bottom: 2.5rem;
     padding-bottom: 1.875rem;
     text-transform: capitalize;
+    position: relative;
+}
+.title:after, .title:before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.title:before {
+    border-color: var(--logo-pink);
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+.title::after{
+    background-color: var(--logo-pink);
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
 }
 /***** End general *****/
 /***** hello *****/
