@@ -477,4 +477,20 @@ body{
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
 }
+@media only screen and (min-width:768px) {
+    .portfolioImgs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .portfolioImgs figure{
+        width: 45%;
+        margin: 1rem 0.9375rem;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .portfolioImgs figure{
+        width: 30.33%;
+    }
+}
 /***** End portfolio *****/
