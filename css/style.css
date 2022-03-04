@@ -438,9 +438,11 @@ body{
 .portfolioLinks li{
     padding: 0.1875rem 0.75rem;
 }
-.portfolioLinks li a{
+.portfolioLinks li button{
     color: var(--dark-title);
     font-size: 1rem;
+    border: none;
+    background: transparent;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
