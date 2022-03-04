@@ -450,5 +450,31 @@ body{
 }
 .portfolioImgs figure{
     margin-bottom: 1.875rem;
+    position: relative;
+}
+.portfolioOvelay{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.57);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+.portfolioOvelay:hover{
+    opacity: 1;
+}
+.portfolioOvelay i{
+    bottom: 15px;
+    color: var(--logo-pink);
+    font-size: 1.25rem;
+    position: absolute;
+    right: 15px;
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
 }
 /***** End portfolio *****/
