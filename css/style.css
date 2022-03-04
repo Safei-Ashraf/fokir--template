@@ -418,3 +418,37 @@ body{
     }
 }
 /***** End services *****/
+/***** portfolio *****/
+.portfolio .flex-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.portfolio{
+    padding: 6.25rem 0 4.375rem;
+}
+.portfolioLinks{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.125rem;
+    justify-content: center;
+}
+.portfolioLinks li{
+    padding: 0.1875rem 0.75rem;
+}
+.portfolioLinks li a{
+    color: var(--dark-title);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.active{
+    color: var(--logo-pink);
+}
+.portfolioImgs figure{
+    margin-bottom: 1.875rem;
+}
+/***** End portfolio *****/
