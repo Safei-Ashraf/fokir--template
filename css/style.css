@@ -449,7 +449,7 @@ body{
     text-transform: uppercase;
 }
 .active{
-    color: var(--logo-pink);
+    color: var(--logo-pink) !important;
 }
 .portfolioImgs figure{
     margin-bottom: 1.875rem;
