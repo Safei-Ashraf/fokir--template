@@ -25,3 +25,11 @@ function filterDisplay(e) {
         }
     }
 }
+// active button
+function addActive(e) {
+    for (let i = 0; i < filterSelection.length; i++) {
+        const item = filterSelection[i];
+        item.classList.remove("active")
+    }
+    e.target.className += " active";
+}
