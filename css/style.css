@@ -525,4 +525,15 @@ body{
 .numbersCards{
     margin-bottom: 1.875rem;
 }
+@media only screen and (min-width:768px) {
+    .numbers{
+        padding: 6.25rem 0;
+    }
+    .numbers .flex-container{
+        flex-direction: row;
+    }
+    .numbersCards{
+        width: 25%;
+    }
+}
 /***** End numbers *****/
