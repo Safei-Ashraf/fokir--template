@@ -5,11 +5,7 @@ let allImages = document.getElementsByClassName('all')
 // toggle menu
 navToggle.addEventListener("click", menuDown);
 function menuDown() {
-    if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none"
-    } else {
-        navLinks.style.display = "flex"
-    }
+    navLinks.style.display === "flex" ? navLinks.style.display = "none" : navLinks.style.display = "flex"
 }
 // items filtration
 for (let i = 0; i < filterSelection.length; i++) {
@@ -18,11 +14,11 @@ for (let i = 0; i < filterSelection.length; i++) {
 }
 function filterDisplay(e) {
     for (let image of allImages) {
-        if (image.classList.contains(e.currentTarget.innerText.replace(/\s+/g, "").toLowerCase())) {
+        image.classList.contains(e.currentTarget.innerText.replace(/\s+/g, "").toLowerCase())
+            ?
             image.style.display = "flex"
-        } else {
+            :
             image.style.display = "none"
-        }
     }
 }
 // active button
