@@ -500,4 +500,35 @@ body{
     }
 }
 /***** End client *****/
+/***** blog *****/
+.blog{
+    background: var(--light-bg);
+    padding: 3.75rem 0 1.875rem;
+}
+.blogVideos{
+    color: var(--dark-text);
+}
+.blogDesc{
+    padding: 1.25rem;
+}
+.blogDesc h3{
+    padding-bottom: 0.9375rem;
+}
+.blogDesc a{
+    color: var(--dark-title);
 
+}
+.blogDesc p{
+    padding:  0 0 0.9375rem;
+}
+.blogVideo{
+    background: var(--white-text);
+    margin-bottom: 30px;
+}
+.blogVideo figcaption{
+    margin-bottom: 0.625rem;
+}
+.readMore{
+    text-transform: uppercase;
+}
+/***** End blog *****/
