@@ -424,10 +424,12 @@ body{
 }
 .client .flex-container{
     justify-content: center;
+    flex-direction: column;
 }
 .clientCard{
     background: var(--light-bg);
     padding: 1.25rem;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -486,6 +488,7 @@ body{
     .clientCard{
         flex-direction: row;
         padding: 2.5rem;
+        width: 62%;
     }
     .clientImg{
         width: 20%;
