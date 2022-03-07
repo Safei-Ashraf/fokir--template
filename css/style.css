@@ -485,6 +485,9 @@ body{
     -o-transform: translateX(0%);
 }
 @media only screen and (min-width:768px) {
+    .client{
+        padding: 6.25rem 0 4.375rem;
+    }
     .clientCard{
         flex-direction: row;
         padding: 2.5rem;
