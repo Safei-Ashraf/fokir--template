@@ -418,6 +418,7 @@ body{
     }
 }
 /***** End services *****/
+/***** client *****/
 .client{
     padding: 3.75rem 0;
 }
@@ -481,3 +482,22 @@ body{
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
 }
+@media only screen and (min-width:768px) {
+    .clientCard{
+        flex-direction: row;
+        padding: 2.5rem;
+    }
+    .clientImg{
+        width: 20%;
+    }
+    .clientInfo{
+        width: 82%;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .clientCard{
+        width: 75%;
+    }
+}
+/***** End client *****/
+
