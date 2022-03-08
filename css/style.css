@@ -571,14 +571,14 @@ body{
 .contactForm textarea{
     height: auto;
 }
-.contactInput.btn{
+.contactInput .btn{
     width: 50%;
 }
 @media only screen and (min-width:768px) {
     .contactForm{
         width: 60%;
     }
-    .contactInput.btn{
+    .contactInput .btn{
         width: 25%;
     }
 }
