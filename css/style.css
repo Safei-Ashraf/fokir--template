@@ -93,6 +93,12 @@ body{
 }
 /***** End general *****/
 /***** navbar *****/
+.navColored{
+    background-color: var(--dark-title) !important;
+}
+.navTransparent{
+    background: transparent;
+}
 .navbar{
     padding: 1.125rem 0;
     position: fixed;
