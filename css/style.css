@@ -179,7 +179,7 @@ body{
     border-right: .15em solid black;
     white-space: nowrap;
     animation: 
-    typing 1s steps(20, end) forwards infinite;
+    typing 1s steps(12, end) infinite;
     font-size: 1.6rem;
 }
 @keyframes typing {
