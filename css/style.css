@@ -121,7 +121,7 @@ body{
         justify-content: space-between;
     }
     .navLinks{
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: flex-end;
         background: transparent;
@@ -173,6 +173,18 @@ body{
     font-weight: 600;
     font-size: 22px;
     margin: 0 0 10px;
+}
+.heroAnimated{
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: 
+    typing 1s steps(20, end) forwards infinite;
+    font-size: 1.6rem;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 @media only screen and (min-width:678px) {
     .heroTitle{
