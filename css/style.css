@@ -174,18 +174,6 @@ body{
     font-size: 22px;
     margin: 0 0 10px;
 }
-.heroAnimated{
-    overflow: hidden;
-    border-right: .15em solid black;
-    white-space: nowrap;
-    animation: 
-    typing 1s steps(12, end) infinite;
-    font-size: 1.6rem;
-}
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
 @media only screen and (min-width:678px) {
     .heroTitle{
         font-size: 4.375rem;
