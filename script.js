@@ -95,4 +95,4 @@ function addActive(e) {
         item.classList.remove("active")
     }
     e.target.className += " active";
-}
+}}
