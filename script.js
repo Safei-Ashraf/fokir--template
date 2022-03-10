@@ -45,13 +45,11 @@ TxtRotate.prototype.tick = function () {
 };
 
 window.onload = function () {
-    let elements = document.getElementsByClassName('txt-rotate');
-    for (let i = 0; i < elements.length; i++) {
-        let toRotate = elements[i].getAttribute('data-rotate');
-        let period = elements[i].getAttribute('data-period');
+    let elements = document.getElementsByClassName('txt-rotate')[0];
+        let toRotate = elements.getAttribute('data-rotate');
+        let period = elements.getAttribute('data-period');
         if (toRotate) {
-            new TxtRotate(elements[i], JSON.parse(toRotate), period);
-        }
+            new TxtRotate(elements, JSON.parse(toRotate), period);
     }
     // INJECT CSS
     let css = document.createElement("style");
