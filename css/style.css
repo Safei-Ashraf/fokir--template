@@ -150,7 +150,7 @@ body{
         justify-content: space-between;
     }
     .navLinks{
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: flex-end;
         background: transparent;
@@ -202,6 +202,7 @@ body{
     font-weight: 600;
     font-size: 22px;
     margin: 0 0 10px;
+    text-transform: capitalize;
 }
 @media only screen and (min-width:678px) {
     .heroTitle{
