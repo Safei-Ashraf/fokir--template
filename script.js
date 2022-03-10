@@ -39,8 +39,8 @@ TxtRotate.prototype.tick = function () {
         this.loopNum++;
         delta = 500;
     }
-    setTimeout(function () {
-        that.tick();
+    setTimeout(() => {
+        this.tick()
     }, delta);
 };
 
@@ -54,7 +54,7 @@ window.onload = function () {
     injectCss()
 };
 function injectCss(){
-git        let css = document.createElement("style");
+        let css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
         document.body.appendChild(css);
