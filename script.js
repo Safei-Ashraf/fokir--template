@@ -13,7 +13,6 @@ function menuDown() {
 let navbar = document.getElementsByClassName("navbar")[0]
 
 window.onscroll = function () {
-    "use strict";
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
         navbar.classList += " navColored";
         navbar.classList.remove("navTransparent");
