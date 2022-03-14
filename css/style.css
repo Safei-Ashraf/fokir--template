@@ -62,7 +62,7 @@ body{
     background: var(--red);
 }
 .title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     line-height: 1.875rem;
     margin-bottom: 2.5rem;
@@ -91,6 +91,9 @@ body{
     height: 1px;
     width: 160px;
 }
+@media only screen and (min-width:1024px) { .title{
+    font-size: 2.5rem;
+}}
 /***** End general *****/
 /***** navbar *****/
 .navColored{
@@ -551,12 +554,13 @@ body{
 .client .flex-container{
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 .clientCard{
     background: var(--light-bg);
     padding: 1.25rem;
     border-radius: 5px;
-    display: flex;
+    display: none;
     flex-direction: column;
     position: relative;
     overflow: hidden;
@@ -609,6 +613,20 @@ body{
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
+}
+.dot {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid var(--logo-pink);
+    border-radius: 50%;
+    display: inline-block;
+    height: 0.625rem;
+    margin: 0 0.1875rem;
+    width: 0.625rem;
+}
+.activeSlide{
+    background: #ff305b none repeat scroll 0 0;
+    border-radius: 10px;
+    padding: 4px 12px;
 }
 @media only screen and (min-width:768px) {
     .client{

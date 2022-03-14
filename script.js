@@ -63,8 +63,8 @@ function injectCss(){
 let navbar = document.getElementsByClassName("navbar")[0]
 
 window.onscroll = function () {
-    "use strict";
-    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+    const VERTICAL_SPACE = 200
+    if (document.body.scrollTop >= VERTICAL_SPACE || document.documentElement.scrollTop >= VERTICAL_SPACE) {
         navbar.classList += " navColored";
         navbar.classList.remove("navTransparent");
     }
@@ -72,6 +72,34 @@ window.onscroll = function () {
         navbar.classList += " navTransparent";
         navbar.classList.remove("navColored");
     }
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("clientCard");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" activeSlide", "");
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " activeSlide";
+}
     navLinks.style.display === "flex" ? navLinks.style.display = "none" : navLinks.style.display = "flex"
 }
 // items filtration
@@ -95,4 +123,4 @@ function addActive(e) {
         item.classList.remove("active")
     }
     e.target.className += " active";
-}}
+}
