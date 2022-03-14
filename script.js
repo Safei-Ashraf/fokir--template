@@ -1,15 +1,12 @@
 let navToggle = document.getElementsByClassName("navToggle")[0]
 let navLinks = document.getElementsByClassName("navLinks")[0]
+let navbar = document.getElementsByClassName("navbar")[0]
 let filterSelection = document.getElementsByClassName("filterSelection")
 let allImages = document.getElementsByClassName('all')
 // toggle menu
 navToggle.addEventListener("click", menuDown);
 function menuDown() {
-    if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none"
-    } else {
-        navLinks.style.display = "flex"
-    }
+    navLinks.style.display === "flex" ? navLinks.style.display = "none" : navLinks.style.display = "flex"
 }
 let TxtRotate = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -59,8 +56,8 @@ function injectCss(){
         css.type = "text/css";
         css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
         document.body.appendChild(css);
+    }
 
-let navbar = document.getElementsByClassName("navbar")[0]
 
 window.onscroll = function () {
     const VERTICAL_SPACE = 200
@@ -99,8 +96,6 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " activeSlide";
-}
-    navLinks.style.display === "flex" ? navLinks.style.display = "none" : navLinks.style.display = "flex"
 }
 // items filtration
 for (let i = 0; i < filterSelection.length; i++) {
